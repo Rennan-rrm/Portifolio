@@ -1,0 +1,140 @@
+html {
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+#container-perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+#foto-perfil {
+    height: 400px;
+    border-radius: 50%;
+}
+
+#perfil {
+    text-align: center;
+    margin: 0 30px;
+}
+
+.nome-perfil {
+    font-weight: bold;
+}
+
+#container-sobre {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.titulo-sobre {
+    margin: 60px 0;
+    color: white;
+    font-weight: bold;
+}
+
+#sobre-min {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: whitesmoke;
+    width: 50%;
+    padding: 40px;
+    margin: auto;
+    border-radius: 20px 0 20px;
+    text-align: left;
+}
+
+#titulo-portifolio {
+    text-align: center;
+    padding-top: 100px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+#container-portifolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px;
+}
+
+.card {
+    text-align: center;
+    margin: 10px;
+    box-shadow: 3px 3px 8px black;
+}
+
+#titulo-habilidade,
+#titulo-contatos {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding-top: 50px;
+}
+
+#container-habilidade {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    height: 400px;
+}
+
+.card-habilidade {
+    padding: 20px 10px;
+    text-align: center;
+    list-style: none;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#container-contato {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+#contato-links {
+    list-style: none;
+}
+
+.link-contatos {
+    color: white;
+}
+
+footer {
+    font-weight: bold;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ======== Responsividade ======== */
+@media (max-width: 600px) {
+    #container-perfil {
+        display: block;
+        padding-top: 30px;
+    }
+    .perfil,a {
+        padding-top: 10px;
+        margin: 10px;
+    }
+    #sobre-min {
+        width: 90%;
+        text-align: center;
+    }
+    #container-portifolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+        padding: 20px;
+    }
+}
