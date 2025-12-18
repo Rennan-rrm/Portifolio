@@ -36,7 +36,7 @@ Projeto de aplicação web desenvolvido para simular um sistema simples de agend
 - Criação de formulários
 - Responsividade
 
-🔗 Demonstração: https://lara-gabrielly.vercel.app/
+🔗 Demonstração: https://laragabrielly.vercel.app/
 
 ---
 
