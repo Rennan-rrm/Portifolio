@@ -1,159 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="sytle.css">
+    <script src="script.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Rennan Rodrigues | Portfólio</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <title>Rennan Rodrigues</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" width="50" height="50" class="d-inline-block align-top rounded" alt="logo-RM">
+            </a>
+        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#container-sobre">Sobre<span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#container-portifolio">Portifolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#container-habilidade">Habilidades</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#container-contato">Contato</a>
+                </li>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo.png" width="40" height="40" class="rounded" alt="logo">
-    </a>
+            </ul>
+        </div>
+    </nav>
+    <section class="bg-secondary">
+        <div id="container-perfil">
+            <div>
+                <img id="foto-perfil" src="img/perfil1.jpg" alt="foto-perfil">
+            </div>
+            <div id="perfil">
+                <h1 class="nome-perfil">Rennan Rodrigues</h1>
+                <h2>Estudante de Engenharia de Software</h2>
+                <br>
+                <a type="button" class="btn btn-info btn-lg" href="#container-portifolio">Veja meu portifolio</a>
+                <a type="button" class="btn btn-dark btn-lg" href="#container-contato">Entre em contato comigo</a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- PERFIL -->
-<section class="perfil bg-secondary">
-    <img src="img/perfil1.jpg" alt="Foto de perfil" class="foto-perfil">
-
-    <h1>Rennan Rodrigues</h1>
-    <h2>Estudante de Engenharia de Software</h2>
-
-    <div class="botoes">
-        <a href="#portfolio" class="btn btn-info">Ver portfólio</a>
-        <a href="#contato" class="btn btn-dark">Contato</a>
-    </div>
-</section>
-
-<!-- SOBRE -->
-<section id="sobre" class="bg-dark text-white">
-    <h2>Sobre mim</h2>
-
-    <p>
-        Sou estudante de <strong>Engenharia de Software</strong>, em transição de carreira
-        para a área de desenvolvimento.
-        <br><br>
-        Tenho foco em desenvolvimento web e venho praticando
-        <strong>HTML, CSS e JavaScript</strong>, além de iniciar meus estudos em
-        <strong>C#</strong>.
-        <br><br>
-        Busco uma <strong>oportunidade de estágio</strong> onde eu possa aprender,
-        evoluir tecnicamente e contribuir de forma responsável com a equipe.
-    </p>
-</section>
-
-<!-- PORTFÓLIO -->
-<section id="portfolio" class="bg-secondary">
-    <h2>Portfólio</h2>
-
-    <div class="portfolio-container">
-
-        <!-- PROJETO 1 -->
-        <div class="card">
-            <img src="img/lista-de-compras.png" class="card-img-top" alt="Lista de Compras">
-
-            <div class="card-body">
-                <h5 class="card-title">Lista de Compras</h5>
-
-                <p class="card-text">
-                    Aplicação web para adicionar e remover itens de uma lista,
-                    focando em lógica de programação e manipulação do DOM.
-                </p>
-
-                <p class="card-text">
-                    <strong>Tecnologias:</strong> HTML, CSS, JavaScript
-                </p>
-
-                <p class="card-text">
-                    <strong>Aprendizado:</strong> arrays, eventos e atualização dinâmica da interface.
-                </p>
-
-                <a href="https://lista-de-compras-six-orcin.vercel.app/" target="_blank"
-                   class="btn btn-primary btn-sm">Ver projeto</a>
-
-                <a href="https://github.com/SEU_GITHUB_AQUI" target="_blank"
-                   class="btn btn-outline-dark btn-sm">Código</a>
             </div>
         </div>
-
-        <!-- PROJETO 2 -->
-        <div class="card">
-            <img src="img/agendamento lara.png" class="card-img-top" alt="Agendamento">
-
-            <div class="card-body">
-                <h5 class="card-title">Site de Agendamento</h5>
-
-                <p class="card-text">
-                    Sistema simples de agendamento de serviços com foco em
-                    organização e experiência do usuário.
-                </p>
-
-                <p class="card-text">
-                    <strong>Tecnologias:</strong> HTML, CSS, JavaScript
-                </p>
-
-                <p class="card-text">
-                    <strong>Aprendizado:</strong> formulários, organização de layout e responsividade.
-                </p>
-
-                <a href="https://agendamento-lara-gabrielly.vercel.app/" target="_blank"
-                   class="btn btn-primary btn-sm">Ver projeto</a>
+    </section>
+    <section class="bg-secondary">
+        <div id="container-sobre">
+            <h1 class="titulo-sobre">Sobre min</h1>
+            <p id="sobre-min" class="bg-dark text-white">
+                Olá! Meu nome é <strong>Rennan Rodrigues</strong> e sou um desenvolvedor <strong>front-end</strong> em
+                formação, apaixonado por tecnologia, design e tudo que envolve o desenvolvimento web. Tenho um grande
+                interesse em criar <strong>interfaces modernas, responsivas e intuitivas</strong> que proporcionem uma
+                excelente experiência ao usuário.
+                <br><br>
+                Atualmente, estou focado em aprimorar minhas habilidades com <strong>HTML, CSS, JavaScript e C#</strong>,
+                além de estudar <strong>frameworks modernos</strong> que tornam o desenvolvimento mais ágil e eficiente.
+                Busco sempre entender não apenas o código, mas também os princípios de <strong>design, usabilidade e
+                    acessibilidade</strong> que tornam um projeto realmente completo.
+                <br><br>
+                Gosto de transformar ideias em projetos reais, aplicando boas práticas de código e explorando novas
+                formas de criar interfaces criativas e funcionais. Acredito que a combinação entre lógica e design é o
+                que torna o desenvolvimento front-end tão fascinante.
+                <br><br>
+                Quando não estou programando, gosto de aprender novas tecnologias, explorar tendências do mundo digital
+                e
+                me desafiar com projetos pessoais que expandem meu conhecimento. Estou sempre em busca de evolução,
+                tanto profissional quanto pessoal, e ansioso para contribuir em projetos que façam a diferença.
+            </p>
+        </div>
+    </section>
+    <section class="bg-dark">
+        <h1 id="titulo-portifolio">Portifólio</h1>
+        <div id="container-portifolio">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/agendamento lara.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Site de agendamento</strong></h5>
+                    <p class="card-text">
+                        Aplicação web desenvolvida para facilitar o processo de agendamento de serviços, com foco em
+                        praticidade e experiência do usuário.
+                        O sistema permite que clientes escolham horários disponíveis de forma simples e rápida, trazendo
+                        mais organização e agilidade para o atendimento. <br><br></p>
+                    <a href="https://agendamento-lara-gabrielly.vercel.app/" target="_blank"
+                        class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="img/lista-de-compras.png" alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Lista de compras</strong></h5>
+                    <p class="card-text">
+                        Este projeto é uma aplicação simples e funcional desenvolvida para auxiliar no controle de itens de compra. A interface permite que o usuário adicione, visualize e remova produtos de uma lista, tornando o processo de organização mais prático e intuitivo.<br><br></p>
+                    <a href="https://lista-de-compras-six-orcin.vercel.app/" target="_blank"
+                        class="btn btn-primary">Visitar</a>
+                </div>
             </div>
         </div>
+    </section>
+    <section class="bg-secondary">
+        <h1 id="titulo-habilidade">Habilidade</h1>
+        <div id="container-habilidade">
+            <div class="card" style="width: 18rem;">
+                <div class="card-habilidade">
+                    <h4 class="card-title"><strong>Estudando</strong></h4>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-dark">
+        <h1 id="titulo-contatos">Contatos</h1>
+        <div id="container-contato">
+            <div id="contato-links">
+                <li><a class="link-contatos" href="https://www.linkedin.com/in/rennan-rodrigues-559a12335/" target="_blank">LinkedIm</a></li>
+                <li><a class="link-contatos" href="https://github.com/settings/profile" target="_blank">GitHub</a></li>
+                <li><a class="link-contatos" href="mailto:rennan.rrm@gmail.com" target="_blank">rennan.rrm@gmail.com</a></li>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Rennan Rodrigues</p>
+    </footer>
 
-    </div>
-</section>
-
-<!-- HABILIDADES -->
-<section id="habilidades" class="bg-dark text-white">
-    <h2>Habilidades</h2>
-
-    <ul class="lista-habilidades">
-        <li>HTML – confortável</li>
-        <li>CSS – em prática</li>
-        <li>JavaScript – aprendizado ativo</li>
-        <li>Git e GitHub – básico</li>
-        <li>C# – iniciando estudos</li>
-    </ul>
-</section>
-
-<!-- CONTATO -->
-<section id="contato" class="bg-secondary">
-    <h2>Contato</h2>
-
-    <ul class="contatos">
-        <li><a href="https://www.linkedin.com/in/rennan-rodrigues-559a12335/" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/SEU_GITHUB" target="_blank">GitHub</a></li>
-        <li><a href="mailto:rennan.rrm@gmail.com">rennan.rrm@gmail.com</a></li>
-    </ul>
-</section>
-
-<footer>
-    <p>&copy; Rennan Rodrigues</p>
-</footer>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
